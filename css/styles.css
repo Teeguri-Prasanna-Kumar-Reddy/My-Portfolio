@@ -1,0 +1,257 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+#C03221 - Engineering Orange
+#4464AD - True Blue
+#A4B0F5 - Powder Blue
+#F58F29 - Dark Orange
+#466995 - Lapis Lazuli
+*/
+
+
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #FFE66D;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 50px;
+  line-height: 1;
+}
+h2 {
+  font-size: 35px;
+}
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #DDFFF7;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+
+/* Profile
+------------------------------------*/
+header {
+  background: #C03221;
+  color: #F7FFF7;
+}
+.profile-image img {
+  max-width: 30%;
+  border-radius: 70%; /* Creates a circular profile image */
+  border: 2px solid #333; /* Adds a border around the image */
+}
+
+
+/* Projects
+------------------------------------*/
+.projects {
+  background: #FF9B42;
+  color: black;
+}
+.projects a {
+  color: rgb(255, 255, 255) ;
+}
+.projects .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background: #2541B2;
+  color: #DDFFF7;
+}
+
+
+
+/* Education
+------------------------------------*/
+.education {
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+  color: black;
+}
+.education p {
+  width: 60%;
+}
+
+/* Certificates
+------------------------------------*/
+.certificates {
+  background: #A1C6D7;
+  color: black;
+}
+.certificates a {
+  color: #2F3061;
+}
+.certificates .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.certificates .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}
+
+/* Accomplishments
+------------------------------------*/
+.accomplishments {
+  background: #FFE66D;
+  color: black;
+}
+.accomplishments a {
+  color: #2F3061;
+}
+.accomplishments .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.accomplishments .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}
+
+
+
+/* Contact Info
+------------------------------------*/
+footer {
+  background: #30323D;
+  color: #F7FFF7;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+  color: #F7FFF7;
+  text-decoration: none;
+  font-size: 16px;
+}
+.contact-list a:hover {
+  color: #FFE66D;
+}
+.contact-list a i {
+  margin-right: 10px;
+}
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
